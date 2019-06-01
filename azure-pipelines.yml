@@ -24,7 +24,8 @@ steps:
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
-    testResultsFiles: '$(System.DefaultWorkingDirectory)/**/junit.xml'
+    testResultsFiles: '**/*junit.xml'
+    testResultsFormat: 'JUnit'
     testRunTitle: 'Publish test results'
 
 - task: PublishCodeCoverageResults@1
