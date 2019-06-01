@@ -17,18 +17,19 @@ steps:
 
 - script:
     npm install
-    npm ci
     npm run build
   displayName: 'npm install and build'
+
+- script: npm ci
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
-    testResultsFiles: '**/*junit.xml'
+    testResultsFiles: '**/junit.xml'
     testResultsFormat: 'JUnit'
     testRunTitle: 'Publish test results'
 
 - task: PublishCodeCoverageResults@1
   inputs: 
-    codeCoverageTool: cobertura
+    codeCoverageTool: Cobertura
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
