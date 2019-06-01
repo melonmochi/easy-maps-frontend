@@ -1,4 +1,4 @@
-# # Offline solution for maps tools build with flask. <https://reactjs.org/>
+# Public transportation visualization tools build with React. <https://reactjs.org/>
 
 English | [Español](./README-es_ES.md)
 
@@ -7,7 +7,7 @@ English | [Español](./README-es_ES.md)
 ## ⌨️ Development
 
 ```bash
-git clone git@github.com:melonmochi/easy-maps-backend.git
+git clone git@github.com:melonmochi/easy-maps-frontend.git
 cd easy-maps-frontend
 ```
 
