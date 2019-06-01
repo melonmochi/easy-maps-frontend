@@ -1,0 +1,12 @@
+{
+    "name": "easy-maps-frontend",
+    "version": "1.0.0",
+    "description": "Public transportation visualization tools build with React.",
+    "main": "index.js",
+    "repository": {
+        "url": "https://github.com/melonmochi/easy-maps-frontend",
+        "type": "git"
+    },
+    "author": "melonmochi <melonmochi3@gmail.com>",
+    "license": "MIT"
+}
