@@ -24,10 +24,10 @@ steps:
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
-    testResultsFiles: '**/junit.xml'
+    testResultsFiles: '$(System.DefaultWorkingDirectory)/**/junit.xml'
     testRunTitle: 'Publish test results'
 
 - task: PublishCodeCoverageResults@1
   inputs: 
     codeCoverageTool: cobertura
-    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage/cobertura-coverage.xml'
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*coverage.xml'
