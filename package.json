@@ -45,6 +45,6 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
     "test": "jest --coverage",
-    "ci": "jest --coverage --reporters=jest-junit --coverageReporters=cobertura"
+    "test:ci": "jest --coverage --reporters=jest-junit --coverageReporters=cobertura"
   }
 }

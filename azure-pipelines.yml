@@ -20,7 +20,7 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-- script: npm ci
+- script: npm run test:ci
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
