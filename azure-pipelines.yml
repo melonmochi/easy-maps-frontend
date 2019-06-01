@@ -25,7 +25,7 @@ steps:
   condition: succeededOrFailed()
   inputs:
     testRunner: JUnit
-    testResultsFiles: '**/junit.xml'
+    testResultsFiles: 'junit.xml'
 
 - task: PublishCodeCoverageResults@1
   inputs: 
