@@ -18,8 +18,11 @@ steps:
 - script:
     npm install
     npm run test:ci
+  displayName: 'npm install'
+
+- script:
     npm run build
-  displayName: 'npm install and build'
+  displayName: 'npm build'
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
