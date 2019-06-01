@@ -23,6 +23,10 @@ steps:
     npm run build
   displayName: 'npm build'
 
+- script:
+    npm run ci
+  displayName: 'npm ci'
+
 - task: PublishTestResults@2
   condition: succeededOrFailed()
   inputs:
