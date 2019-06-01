@@ -1,5 +1,6 @@
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 const tsImportPluginFactory = require('ts-import-plugin')
 
 module.exports = {
@@ -13,6 +14,15 @@ module.exports = {
   devtool: "source-map",
 
   resolve: {
+    alias: {
+      assets: path.resolve(__dirname, './src/assets'),
+      config: path.resolve(__dirname, './config'),
+      components: path.resolve(__dirname, './src/components'),
+      reducers: path.resolve(__dirname, './src/components/utils/reducers'),
+      src: path.resolve(__dirname, './src'),
+      typings: path.resolve(__dirname, './typings'),
+      utils: path.resolve(__dirname, './src/components/utils'),
+    },
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: [".ts", ".tsx", ".js", ".json"]
   },
@@ -32,7 +42,6 @@ module.exports = {
             })]
           })
         },
-        exclude: /node_modules/
       },
       {
         test: /\.less$/,

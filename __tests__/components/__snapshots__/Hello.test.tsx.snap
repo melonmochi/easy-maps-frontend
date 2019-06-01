@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hello matches the snapshot 1`] = `
+<div>
+  <Button
+    block={false}
+    ghost={false}
+    htmlType="button"
+    loading={false}
+    type="primary"
+  >
+    Primary
+  </Button>
+  <h1>
+    Hello from 
+    Typescript
+     and 
+    React
+    !
+  </h1>
+</div>
+`;
