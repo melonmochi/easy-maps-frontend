@@ -17,7 +17,6 @@ steps:
 
 - script:
     npm install
-    npm run test:ci
   displayName: 'npm install'
 
 - script:
