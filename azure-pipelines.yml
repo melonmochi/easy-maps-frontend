@@ -24,6 +24,10 @@ steps:
   displayName: 'npm build'
 
 - script:
+    npm run lint
+  displayName: 'npm lint'
+
+- script:
     npm run ci
   displayName: 'npm ci'
 
