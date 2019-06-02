@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Button } from 'antd';
+import './style';
 
 interface HelloProps {
   compiler: string;
@@ -8,7 +9,9 @@ interface HelloProps {
 
 const Hello = (props: HelloProps) => (
   <div>
-    <Button type="primary">Primary</Button>
+    <Button className="hello-button" type="primary">
+      Primary
+    </Button>
     <h1>
       Hello from {props.compiler} and {props.framework}!
     </h1>

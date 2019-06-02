@@ -63,7 +63,7 @@
     "lint": "yarn run lint:ts && yarn run lint:es && yarn run lint:style",
     "lint:ts": "tslint --project \"tsconfig.json\"",
     "lint:es": "eslint --no-ignore .eslintrc.js ./.*.js ./webpack.config.js --ext '.js,.jsx'",
-    "lint:style": "stylelint \"{src}/**/*.less\" --syntax less",
+    "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
     "prettier": "prettier --write './src/**/*'"
   }
 }
