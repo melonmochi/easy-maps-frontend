@@ -2,7 +2,7 @@
 
 English | [Español](./README-es_ES.md)
 
-[![Build Status](https://dev.azure.com/melonmochi3/easy-maps-frontend/_apis/build/status/melonmochi3.easy-maps-frontend?branchName=master)](https://dev.azure.com/melonmochi3/easy-maps-frontend/_build/latest?definitionId=1?branchName=master)
+[![Build Status](https://dev.azure.com/melonmochi3/easy-maps-frontend/_apis/build/status/melonmochi.easy-maps-frontend?branchName=master)](https://dev.azure.com/melonmochi3/easy-maps-frontend/_build/latest?definitionId=1&branchName=master)
 
 ## ⌨️ Development
 
