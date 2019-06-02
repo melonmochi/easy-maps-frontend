@@ -4,6 +4,7 @@ exports[`Hello matches the snapshot 1`] = `
 <div>
   <Button
     block={false}
+    className="hello-button"
     ghost={false}
     htmlType="button"
     loading={false}

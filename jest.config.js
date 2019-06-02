@@ -9,8 +9,11 @@ module.exports = {
       tsConfig: 'tsconfig.test.json',
     },
   },
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
+  moduleNameMapper: {
+    ...pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
+    '\\.(css|less|sass|scss)$': '<rootDir>/config/jest/styleStub.js',
+  },
   preset: 'ts-jest',
   setupFilesAfterEnv: ['<rootDir>/src/setupEnzyme.ts'],
-  snapshotSerializers: ["enzyme-to-json/serializer"],
-}
+  snapshotSerializers: ['enzyme-to-json/serializer'],
+};
