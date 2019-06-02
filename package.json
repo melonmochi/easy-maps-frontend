@@ -56,14 +56,15 @@
     "react-dom": "^16.8.6"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "test": "jest --coverage",
     "ci": "jest --coverage --reporters=jest-junit --coverageReporters=cobertura",
+    "docker": "webpack-dev-server --mode development --host 0.0.0.0",
     "lint": "yarn run lint:ts && yarn run lint:es && yarn run lint:style",
-    "lint:ts": "tslint --project \"tsconfig.json\"",
     "lint:es": "eslint --no-ignore .eslintrc.js ./.*.js ./webpack.config.js --ext '.js,.jsx'",
     "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
-    "prettier": "prettier --write './src/**/*'"
+    "lint:ts": "tslint --project \"tsconfig.json\"",
+    "prettier": "prettier --write './src/**/*'",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "test": "jest --coverage"
   }
 }
